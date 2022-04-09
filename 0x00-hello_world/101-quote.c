@@ -2,7 +2,6 @@
 #include <unistd.h>
 /**
  * main - entry
- *
  * return 1: failure
  */
 int main(void)
