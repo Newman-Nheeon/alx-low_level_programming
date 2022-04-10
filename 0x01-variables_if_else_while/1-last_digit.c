@@ -7,9 +7,8 @@
  *
  * Return: Always 0 (Success/Correct)
  */
+int main(void )
 
-
-int main(void )/** Main Function */
 {
 	int n;
 
