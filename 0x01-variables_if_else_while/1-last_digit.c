@@ -9,7 +9,7 @@
  */
 
 
-int main(void ) /** Main Function */
+int main(void )/** Main Function */
 {
 	int n;
 
