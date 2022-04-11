@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-	int base10;
+	int i;
 
-	for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		prinf(%base10, base10);
+		prinf("%i", i);
 	}
 	printf('\n');
 	return (0);
