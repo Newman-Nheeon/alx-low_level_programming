@@ -10,7 +10,7 @@ int main(void)
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		prinf("%i", i);
+		printf("%i", i);
 	}
 	printf('\n');
 	return (0);
