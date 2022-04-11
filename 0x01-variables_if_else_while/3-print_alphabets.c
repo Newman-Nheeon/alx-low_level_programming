@@ -1,16 +1,20 @@
 #include <stdio.h>
 /**
- * Main - Entry Point
+ * main - Entry Point
  *
  * Return: 0 (Success)
  */
 int main(void)
 {
-	char alphabeth;
+	char upper_case lower_case;
 
-	for (alphabeth = 'a'; alphabeth <= 'z'; alphabeth++)
+	for (upper_case = 'A'; upper_case <= 'Z'; upper_case++)
 	{
 		putchar(alphabeth);
+	}
+	for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
+	{
+		putchar(lower_case);
 	}
 	putchar('\n');
 
