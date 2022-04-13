@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_alphabeth_x10 - entry point
+ * print_alphabet_x10 - entry point
  *
  */
 void print_alphabet_x10(void)
@@ -11,10 +11,11 @@ void print_alphabet_x10(void)
 
 	while (count++ <= 9)
 	{
-		for (i = 'a'; i<= 'z'; i++)
+		for (i = 'a'; i <= 'z'; i++)
 		{
 			_putchar(i);
-			_putchar('\n');
 		}
+		_putchar('\n');
+		
 	}
 }
