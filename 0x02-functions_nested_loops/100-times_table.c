@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_times_table
+ * print_times_table - function
  *
  * @n: takes the value of an integer
  */
@@ -10,7 +10,7 @@ void print_times_table(int n)
 	int i;
 	int j;
 	int k;
-	
+
 	if (n >= 0 && n <= 15)
 	{
 		for (i = 0; i <= n; i++)
