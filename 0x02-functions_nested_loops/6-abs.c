@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main"
+#include "main.h"
 /**
  * _abs - entry point
  * @n: takes an integer
