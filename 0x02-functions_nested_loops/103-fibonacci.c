@@ -23,7 +23,7 @@ int main(void)
 			sums += k;
 		}
 	}
-	printf("%lu\n", tot_sum);
+	printf("%lu\n", sums);
 	return (0);
 }
 
