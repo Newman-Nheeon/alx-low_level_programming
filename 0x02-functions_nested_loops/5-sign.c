@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * print_sign - entry
- *
+ * n: value
  * Return: 0(success)
  */
 int print_sign(int n)
