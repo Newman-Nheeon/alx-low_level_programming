@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_last_digit
+ * print_last_digit - entry point
  * @n: takes in an integer
  * Return: returns output
  */
