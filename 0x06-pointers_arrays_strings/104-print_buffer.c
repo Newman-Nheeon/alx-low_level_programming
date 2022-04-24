@@ -40,4 +40,4 @@ void print_buffer(char *b, int size)
 
 			if (c < 32 || c > 132)
 			{
-
+			}
