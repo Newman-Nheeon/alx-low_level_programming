@@ -1,65 +1,86 @@
-#include <stdio.h>
 #include "main.h"
 
+char *_strcat(char *dest, char *src);
+
 /**
- * _strlen - length of a string
- * @s: input char
- * Return: length of a string
+ * argstostr - concatenates all the arguments
+ * @av: the content
+ * @ac: the size of the content
+ *
+ * Return: a pointer to a new string
  */
-
-int _strlen(char *s)
+char *argstostr(int ac, char **av)
 {
-	int l = 0;
+	char *new, *salt;
+	int i, j, k;
 
-	while (*s != '\0')
+	if (ac == 0 || av == NULL)
 	{
-		s++;
-		l++;
+		return (NULL);
 	}
-	return (l);
+	else
+	{
+		for (i = 0, k = 0 ; i < ac ; i++, k++)
+		{
+			for (j = 0 ; av[i][j] != '\0' ; j++, k++)
+			{
+				;
+			}
+		}
+		new = malloc(sizeof(char) * (k + 1));
+		salt = "\n";
+		for (i = 0 ; i < ac ; i++)
+		{
+			new = _strcat(new, av[i]);
+			if (new == NULL)
+			{
+				return (NULL);
+			}
+			if (i + 1 < ac)
+			{
+				new = _strcat(new, salt);
+				if (new == NULL)
+				{
+					return (NULL);
+				}
+			}
+		}
+
+	}
+	new = _strcat(new, salt);
+	if (new == NULL)
+	{
+		return (NULL);
+	}
+	return (new);
 }
 
 /**
- * argstostr - concat
- * @ac: count
- * @av: vector
- * Return: string
+ * _strcat - concatenates two strings
+ * @dest: input parameter string
+ * @src: input parameter string
+ *
+ * Return: dest
  */
-
-char *argstostr(int ac, char **av)
+char *_strcat(char *dest, char *src)
 {
-	int i, j, k;
-	int len, R = 0;
-	char *p;
+	int a;
+	int b;
 
-	if (!ac || !av)
-	{
-		return (NULL);
-	}
-	R = 0;
+	a = 0;
 
-	for (i = 0; i < ac; i++)
+	while (dest[a] != 0)
 	{
-		len = _strlen(av[i]) + 1;
-		R += len;
-	}
-	p = malloc(sizeof(char) * R + 1);
-
-	if (!p)
-	{
-		return (NULL);
+		a++;
 	}
 
-	for (i = 0; i < ac; i++)
-	{
-		len = _strlen(av[i]);
+	b = 0;
 
-		for (j = 0; j < len; j++, k++)
-		{
-			p[k] = av[i][j];
-		}
-		p[k++] = '\n';
+	while (src[b] != 0)
+	{
+		dest[a] = src[b];
+		a++;
+		b++;
 	}
-	p[k] = '\0';
-	return (p);
+	return (dest);
 }
